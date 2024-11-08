@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(a)
+        {
+            if(a=='both')
+            {
+              //document.getElementById("rno").style.visibility='visible';
+              //document.getElementById("name").style.visibility='visible';
+              document.getElementById("rno").style.display='block';
+              document.getElementById("name").style.display='block';
+            }
+            else if(a=='one')
+            {
+             //   document.getElementById("rno").style.visibility='visible';
+               // document.getElementById("rno").style.visibility='hidden';
+               document.getElementById("rno").style.display='none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" name="r" value="both" onchange="fun(this.value)" />both<br>
+    <input type="radio" name="r" value="one" onchange="fun(this.value)"  />ONE<br>
+    <input type="text" id="rno" placeholder="Enter rno" />
+    <br>
+    <input type="text" id="name" placeholder="Enter name" />
+    <br>
+
+</body>
+</html>
